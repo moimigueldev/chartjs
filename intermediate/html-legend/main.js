@@ -29,7 +29,7 @@ var chart = new Chart(ctx, {
     // Configuration options go here
     options: {
         legend: {
-            display: true,
+            display: false,
             position: 'left',
             reverse: false, 
             labels: {
@@ -38,6 +38,19 @@ var chart = new Chart(ctx, {
             },
             // onClick: changeFontColor,
             onHover: changeFontColor,
+        },
+        legendCallback: function(chart) {
+            let text = [];
+            text.push('<ul class="list-inline">')
+            for (let index = 0; index < chart.data.datasets.length; index++) {
+                
+                text.push('<li class="text-white list-inline-item btn" style="background:'+chart.data.datasets[index].backgroundColor+'">')
+                text.push(chart.data.datasets[index].label)
+                text.push('</li>')
+                
+            }
+            text.push('</ul>');
+            return text.join("")
         }
     }
 });

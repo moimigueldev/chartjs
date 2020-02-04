@@ -58,7 +58,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 //             // barPercentage: 0.2,
 //             barThickness: 40,
 //             maxBarThickness: 30,
-        
+
 //         },
 //         {
 //             label: 'Monthly Sales',
@@ -70,7 +70,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 //             // categoryPercentage: 1,
 //             barThickness: 40,
 //             maxBarThickness: 30,
-      
+
 //         }]
 //     },
 
@@ -78,7 +78,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 //     options: {
 //         scales: {
 //             xAxes: [{
-                
+
 //                 gridLines: {
 //                     offsetGridLines: false
 //                 },
@@ -115,7 +115,7 @@ var chart = new Chart(ctx, {
             // barPercentage: 0.2,
             barThickness: 40,
             maxBarThickness: 30,
-        
+
         },
         {
             label: 'Monthly Sales',
@@ -127,7 +127,7 @@ var chart = new Chart(ctx, {
             // categoryPercentage: 1,
             barThickness: 40,
             maxBarThickness: 30,
-      
+
         }
         ]
     },
@@ -136,7 +136,7 @@ var chart = new Chart(ctx, {
     options: {
         scales: {
             xAxes: [{
-                
+
                 gridLines: {
                     offsetGridLines: false
                 },
